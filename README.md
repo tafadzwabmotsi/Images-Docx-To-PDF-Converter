@@ -9,8 +9,8 @@ ImagesDocxToPDFConverter is a JavaFX desktop application that allows users to co
 
 The program takes the following as input files:
 
- * __Image files__
- * __Word document files__]
+ * [__Image files__](https://github.com/tafadzwabmotsi/Images-Docx-To-PDF-Converter/tree/master/input_images "image input files")
+ * [__Word document files__](https://github.com/tafadzwabmotsi/Images-Docx-To-PDF-Converter/tree/master/_word_input_images "word input files")
  
  ---
  ## Processing
