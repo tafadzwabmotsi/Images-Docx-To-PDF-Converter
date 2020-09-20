@@ -4,6 +4,10 @@
 
 ImagesDocxToPDFConverter is a JavaFX desktop application that allows users to convert either images (.jpg or .png) files or .docx files to PDF files by dragging and dropping the files for conversion.
 
+## Download Application
+ * [__Download .jar file__](https://github.com/tafadzwabmotsi/Images-Docx-To-PDF-Converter/blob/master/ImagesDocxToPDFConverter/app_jar/ImagesDocxToPDFConverterApp.jar "Download")
+  
+
 ---
 ## Input files
 
