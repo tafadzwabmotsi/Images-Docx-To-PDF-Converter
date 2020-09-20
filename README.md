@@ -68,3 +68,4 @@ On dropping the images, the preview window is launched and the user can browse t
  * [JavaFX](https://openjfx.io/ "JavaFx")
  * [itextpdf](https://itextpdf.com/en/resources/api-documentation "itextpdf package")
  * [documents4j](https://documents4j.com/ "documents4j package")
+ * [CSS](https://docs.oracle.com/javafx/2/api/javafx/scene/doc-files/cssref.html "JavaFX CSS")
