@@ -64,3 +64,9 @@ On clicking the convert button, the user choose to merge the files or convert as
 ---
 ## Results
   * [Output files](https://github.com/tafadzwabmotsi/Images-Docx-To-PDF-Converter/tree/master/output_files "Converted PDF files")
+  
+## Technologies
+ * [Java](https://docs.oracle.com/en/java/ "Java")
+ * [JavaFX](https://openjfx.io/ "JavaFx")
+ * [itextpdf](https://itextpdf.com/en/resources/api-documentation "itextpdf package")
+ * [documents4j](https://documents4j.com/ "documents4j package")
