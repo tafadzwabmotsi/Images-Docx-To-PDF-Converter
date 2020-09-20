@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="650.0" styleClass="grid-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Text fill="WHITE" layoutX="22.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="about-text" text="ImagesDocxConverter is an application that allows you to convert multiple images and microsoft word documents to Acrobat PDF files." wrappingWidth="600.89453125" />
+            <Text fill="WHITE" layoutX="25.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="about-text" text="It only takes one drag and drop and one push of a button to convert a bunch of files." wrappingWidth="600.89453125" />
+            <Text fill="WHITE" layoutX="22.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="about-text" text="You also have options to navigate your system and select your files before you convert them." wrappingWidth="600.89453125" />
+         </children></Pane>
+   </children>
+</GridPane>

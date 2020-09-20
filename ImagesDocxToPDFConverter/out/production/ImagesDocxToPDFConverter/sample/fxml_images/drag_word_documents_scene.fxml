@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+
+<GridPane fx:id="gridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1300.0" styleClass="grid-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ConvertWordDocumentsToPdfUI">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="475.0" minHeight="10.0" prefHeight="335.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="155.0" minHeight="0.0" prefHeight="65.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+      <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="generatePdfButton" layoutX="242.0" layoutY="17.0" mnemonicParsing="false" onAction="#generateButtonHandler" prefHeight="31.0" prefWidth="157.0" text="Convert" />
+            <Button fx:id="backButton" layoutX="908.0" layoutY="17.0" mnemonicParsing="false" onAction="#backButtonHandler" prefHeight="37.0" prefWidth="157.0" text="Back" />
+         </children>
+      </Pane>
+      <Pane fx:id="wordDocumentsPane" onDragDropped="#wordDocumentsPaneDragDroppedHandler" onDragOver="#wordDocumentsPaneDragOverHandler" prefHeight="200.0" prefWidth="200.0" styleClass="pane">
+         <children>
+            <StackPane fx:id="stackPane" layoutX="391.0" layoutY="69.0" styleClass="stack-pane">
+               <children>
+                  <Text fx:id="dragWordDocumentsText" onMouseClicked="#wordDocumentsTextMouseClickHandler" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="drop-text" wrappingWidth="385.6708984375" />
+                  <ImageView fx:id="dragDocxFilesImageView" fitHeight="224.0" fitWidth="500.0" onMouseClicked="#dragWordDocumentsImageViewMouseClickHandler" pickOnBounds="true" preserveRatio="true" styleClass="image-v" />
+               </children>
+            </StackPane>
+            <MenuBar fx:id="wordDocumentsMenuBar" layoutX="-2.0" layoutY="-2.0" prefHeight="32.0" prefWidth="1307.0">
+              <menus>
+                <Menu mnemonicParsing="false" styleClass="menu" text="File">
+                  <items>
+                    <MenuItem fx:id="fileOpenMenuItem" mnemonicParsing="false" onAction="#fileOpenMenuItemOnActionHandler" text="Open" />
+                        <MenuItem fx:id="fileCloseMenuItem" mnemonicParsing="false" onAction="#fileCloseMenuItemOnActionHandler" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" styleClass="menu" text="Edit">
+                  <items>
+                    <MenuItem fx:id="editClearMenuItem" mnemonicParsing="false" onAction="#editClearMenuItemOnActionHandler" text="Clear" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" styleClass="menu" text="Help">
+                  <items>
+                        <Menu mnemonicParsing="false" text="About">
+                          <items>
+                            <MenuItem fx:id="aboutAppMenuItem" mnemonicParsing="false" onAction="#aboutAppMenuItemOnActionHandler" text="App" />
+                          <MenuItem fx:id="aboutAuthorMenuItem" mnemonicParsing="false" onAction="#aboutAuthorMenuItemOnActionHandler" text="Author" />
+                          </items>
+                        </Menu>
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </Pane>
+    </children>
+</GridPane>

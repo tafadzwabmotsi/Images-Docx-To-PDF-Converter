@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="800.0" styleClass="grid-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AboutUI">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Pane fx:id="aboutAuthorPane" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="219.0" fitWidth="185.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@author.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="318.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="about-author-text" text="Tafadzwa Brian Motsi" wrappingWidth="257.24999311566353" />
+            <Text layoutX="187.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="about-author-text-b" text="Tafadzwa Brian Motsi is a computer programmer who started his profession in August 2016." wrappingWidth="592.249997086823" />
+            <Text layoutX="318.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="about-author-text" text="Computer Programmer" wrappingWidth="210.24999311566353" />
+            <Label layoutX="234.0" layoutY="19.0" prefHeight="30.0" prefWidth="69.0" styleClass="about-author-label" text="Name:" />
+            <Label layoutX="187.0" layoutY="49.0" prefHeight="30.0" prefWidth="127.0" styleClass="about-author-label" text="Profession:" />
+            <Text layoutX="187.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="about-author-text-b" text="While he is very much intrested in writing AI based programs, he also writes desktop, mobile, web, and game applications." wrappingWidth="592.2500133514404" />
+            <Text layoutX="187.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="about-author-text-b" text="He is also passionate in composing Christian Music." wrappingWidth="592.2500133514404" />
+            <ImageView fx:id="aboutAuthorFacebookImageView" fitHeight="40.0" fitWidth="53.0" layoutX="187.0" layoutY="255.0" onMouseClicked="#aboutAuthorFacebookImageViewOnMouseClickedHandler" onMouseEntered="#aboutAuthorFacebookImageViewOnMouseEnteredHandler" onMouseExited="#aboutAuthorFacebookImageViewOnMouseExitedHandler" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@iconfinder_BW_Facebook_glyph_svg_5305154.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="aboutAuthorTwitterImageView" fitHeight="40.0" fitWidth="53.0" layoutX="437.0" layoutY="255.0" onMouseClicked="#aboutAuthorTwitterImageViewOnMouseClickedHandler" onMouseEntered="#aboutAuthorTwitterImageViewOnMouseEnteredHandler" onMouseExited="#aboutAuthorTwitterImageViewOnMouseExitedHandler" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@iconfinder_Circled_Twitter_svg_5279123.png" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="authorFacebookHyperLink" layoutX="234.0" layoutY="255.0" onAction="#authorFacebookHyperLinkOnActionHandler" text="tafadzwabmotsi" />
+            <Hyperlink fx:id="authorTwitterHyperLink" layoutX="483.0" layoutY="255.0" onAction="#authorTwitterHyperLinkOnActionHandler" text="tafadzwabmotsi" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>

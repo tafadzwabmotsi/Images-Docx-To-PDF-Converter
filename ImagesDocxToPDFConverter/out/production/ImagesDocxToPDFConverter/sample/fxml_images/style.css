@@ -1,0 +1,146 @@
+.grid-pane{
+    -fx-background-color: #222038;
+    -fx-font-size: 20px;
+}
+
+.menu-bar{
+    -fx-background-color: #1a1836;
+    -fx-color: #000000;
+    -fx-opacity: 0.6;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-font-family:"Comic Sans MS";
+    -fx-padding: 5px;
+}
+
+.menu-item{
+    -fx-background-color: #c0bfca; 
+    -fx-text-fill: #7e7f94;
+}
+
+.menu-item:hover{
+    -fx-background-color: #0e0d14;  
+}
+
+.menu :hover{
+    -fx-text-fill: #141024;
+}
+
+
+.hyperlink{
+    -fx-border-color: transparent;
+    -fx-text-underline-position: unset;
+    -fx-text-fill: #ffffff;
+    -fx-opacity: 0.7;
+    -fx-font-family: "Comic Sans MS";
+}
+
+.hyperlink:hover{
+    -fx-underline:false;
+    -fx-text-fill: #ffffff;
+    -fx-opacity: 0.9;
+    -fx-background-color: #0a0f21;
+}
+
+.hyperlink:visited{
+    -fx-underline:false;
+    -fx-text-fill:#0f102e;
+}
+
+.button{
+    -fx-color: #0f0c1f;
+    -fx-font-family: "Comic Sans MS";
+    -fx-text-fill: #a7a2bd;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+    -fx-border-color:  #0f0c1f;
+    -fx-background-color: #0f0c1f;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 6;
+}
+
+.button:hover{
+    -fx-background-color: #060513;
+    -fx-text-fill: #372f5a;
+}
+
+.scroll-pane{
+    -fx-background-color: #08070f;
+}
+
+.flow-pane {
+    -fx-background-color: #b9b6ce;
+}
+
+.image-v{
+    -fx-opacity: 0.3;
+}
+
+.stack-pane{
+}
+
+.drop-text{
+    -fx-font-fill:#000000;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-font-family:"Comic Sans MS";
+    -fx-font-size: 40px;
+}
+
+.about-text{
+    -fx-font-style: normal;
+    -fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 23px;
+    -fx-text-alignment: left;
+    -fx-animated: inherit;
+    -fx-fill: white;
+    -fx-opacity: 0.6;
+}
+
+.about-author-text{
+    -fx-font-style: normal;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 20px;
+    -fx-text-alignment: left;
+    -fx-animated: inherit;
+    -fx-fill: white;
+    -fx-opacity: 0.5;
+}
+
+/*noinspection ALL*/
+.about-author-text-b{
+    -fx-font-style: normal;
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-font-size: 19.5px;
+    -fx-text-alignment: left;
+    -fx-animated: inherit;
+    -fx-fill: black;
+    -fx-font-weight: bolder;
+    -fx-opacity: 0.8;
+}
+
+.about-author-label{
+    -fx-font-style: normal;
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-font-size: 20px;
+    -fx-text-alignment: left;
+    -fx-animated: inherit;
+    -fx-font-weight: bolder;
+}
+
+.alert-text{
+    -fx-font-weight: bolder;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 20px;
+    -fx-text-fill: #ffffff;
+    -fx-opacity: 1;
+    -fx-stroke: black;
+}
+
+.progress-bar{
+    -fx-accent: #372f5a;
+    -fx-border-color: #0e0d14;
+    -fx-progress-color: #0f0c1f;
+    -fx-opacity: 0.8;
+}

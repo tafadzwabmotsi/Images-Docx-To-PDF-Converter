@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#vBoxOnMouseDraggedEventHandler" onMousePressed="#vBoxOnMousePressedEventHandler" prefHeight="200.0" prefWidth="500.0" styleClass="grid-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ImageConversionChoiceUI">
+   <children>
+      <VBox fx:id="closeVBox" alignment="CENTER" prefHeight="34.0" prefWidth="51.0">
+         <VBox.margin>
+            <Insets left="460.0" />
+         </VBox.margin>
+         <children>
+            <ImageView fitHeight="34.0" fitWidth="39.0" onMouseClicked="#cancelButtonOnMouseClickedEventHandler" onMouseEntered="#cancelButtonOnMouseEnteredEventHandler" onMouseExited="#cancelButtonOnMouseExitedEventHandler" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@delete.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <ImageView fitHeight="55.0" fitWidth="51.0">
+         <image>
+            <Image url="@ask.png" />
+         </image>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </ImageView>
+      <Hyperlink alignment="CENTER" contentDisplay="CENTER" onAction="#singleFileHyperLinkOnActionEventHandler" prefHeight="38.0" prefWidth="270.0" text="Convert into a single file" />
+      <Hyperlink alignment="CENTER" contentDisplay="CENTER" onAction="#seperateFilesHyperLinkOnActionEventHandler" prefHeight="38.0" prefWidth="268.0" text="Covert into seperate files" />
+   </children>
+</VBox>

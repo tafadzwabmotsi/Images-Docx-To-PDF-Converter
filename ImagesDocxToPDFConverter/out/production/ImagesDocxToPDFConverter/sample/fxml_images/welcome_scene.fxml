@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="welcomeSceneGridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1300.0" styleClass="grid-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.WelcomeUI">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Pane fx:id="chooseOptionPane" prefHeight="400.0" prefWidth="1300.0">
+         <children>
+            <Hyperlink fx:id="convertImagesHyperLink" alignment="CENTER" contentDisplay="CENTER" layoutX="520.0" layoutY="140.0" onAction="#convertImagesHyperLinkHandler" pickOnBounds="false" prefHeight="40.0" prefWidth="276.0" text="Convert images to PDF files" />
+            <Hyperlink fx:id="convertWordDocxHyperLink" alignment="CENTER" layoutX="520.0" layoutY="220.0" onAction="#convertWordDocxHyperLinkHandler" text="Convert word documents to PDF files" />
+            <Hyperlink fx:id="scanImagesHyperLink" alignment="CENTER" layoutX="520.0" layoutY="180.0" onAction="#scanImagesHyperLinkHandler" prefHeight="40.0" prefWidth="358.0" text="Scan images and convert to PDF files" />
+            <MenuBar fx:id="welcomeSceneMenuBar" layoutX="-1.0" layoutY="-2.0" prefHeight="32.0" prefWidth="1315.0">
+              <menus>
+                <Menu fx:id="fileMenu" mnemonicParsing="false" styleClass="menu" text="File">
+                  <items>
+                        <Menu mnemonicParsing="false" text="Convert">
+                          <items>
+                          <MenuItem fx:id="pngJpgMenuItem" mnemonicParsing="false" onAction="#pngJpgMenuItemHandler" text=".PNG  or .JPG" />
+                            <MenuItem fx:id="docxFileMenuItem" mnemonicParsing="false" onAction="#docxFileMenuItemHandler" text=".DOCX" />
+                          </items>
+                        </Menu>
+                        <MenuItem fx:id="welcomeCloseMenuItem" mnemonicParsing="false" onAction="#welcomeCloseMenuItemHandler" text="Close" />
+                  </items>
+                </Menu>
+                <Menu fx:id="optionMenu" mnemonicParsing="false" styleClass="menu" text="Option">
+                  <items>
+                        <Menu mnemonicParsing="false" text="Open">
+                          <items>
+                            <MenuItem fx:id="imagesMenuItem" mnemonicParsing="false" onAction="#imagesMenuItemOnActionHandler" text="Images" />
+                              <MenuItem fx:id="docxOptionMenuItem" mnemonicParsing="false" onAction="#docxOptionMenuItemHandler" text="Docx" />
+                          </items>
+                        </Menu>
+                  </items>
+                </Menu>
+                <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
+                  <items>
+                        <Menu mnemonicParsing="false" text="About">
+                          <items>
+                            <MenuItem fx:id="aboutAppMenuItem" mnemonicParsing="false" onAction="#aboutAppMenuItemOnActionHandler" text="App" />
+                          <MenuItem fx:id="aboutAuthorMenuItem" mnemonicParsing="false" onAction="#aboutAuthorMenuItemOnActionHandler" text="Author" />
+                          </items>
+                        </Menu>
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
