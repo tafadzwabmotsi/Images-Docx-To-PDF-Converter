@@ -10,7 +10,7 @@ ImagesDocxToPDFConverter is a JavaFX desktop application that allows users to co
 The program takes the following as input files:
 
  * [__Image files__](https://github.com/tafadzwabmotsi/Images-Docx-To-PDF-Converter/tree/master/input_images "image input files")
- * [__Word document files__](https://github.com/tafadzwabmotsi/Images-Docx-To-PDF-Converter/tree/master/_word_input_images "word input files")
+ * [__Word document files__](https://github.com/tafadzwabmotsi/Images-Docx-To-PDF-Converter/tree/master/word_input_images "word input files")
  
  ---
  ## Processing
@@ -18,21 +18,22 @@ The program takes the following as input files:
  
  ### Processing image files
  Given an image, the program does the following:
-  * Creates a new Document instance
-  * Creates a new FileOutputStream instance
+  * Creates a new Document instance and FileOutputStream instance
   * Instantiates a new PdfWriter object
-  * Opens the PdfWriter
-  * Opens the Document
+  * Opens the PdfWriter and Document
   * Creates a new page where the image will be rendered
   * Instantiates and gets a new Image object
-  * Sets image's absolute position __(x, y) = (0, 0)__
-  * Sets border width to __0__
-  * Sets image's page size to __A4__
-  * Adds the image to Document
+  * Sets image's absolute position __(x, y) = (0, 0)__, border width to __0__, and the image's page size to __A4__
+  * Adds the image to the Document object which will convert the image file
   * Close Document and PDFWriter
  
  ### Process word files
- 
+  * Instantiates two  File objects for input and output files respectively.
+  * Instantiates an InputStream and and OutputStream object for input and output files respectively
+  * Builds an IConverter to convert the input file to its respective PDF file
+  * Converts the word file to PDF file
+  * Shuts IConverter
+  * Close the Inputstream and Outputstream objects
 
 
 ## User Interface
