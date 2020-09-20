@@ -63,7 +63,14 @@ On dropping the images, the preview window is launched and the user can browse t
 ![](ImagesDocxToPDFConverter/screen_shots/convert_images_3.png)
 
 ---
+## Converting Images to PDF
+
+Word files can be converted in a similar manner as described above
+
+---
 ## Results
+
+
   * [Output files](https://github.com/tafadzwabmotsi/Images-Docx-To-PDF-Converter/tree/master/output_files "Converted PDF files")
 
 ---
