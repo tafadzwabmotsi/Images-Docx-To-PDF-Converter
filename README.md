@@ -63,4 +63,4 @@ On clicking the convert button, the user choose to merge the files or convert as
 
 ---
 ## Results
-  * [Output files](https://github.com/tafadzwabmotsi/Images-Docx-To-PDF-Converter/tree/master/output_files "Single and merged files")
+  * [Output files](https://github.com/tafadzwabmotsi/Images-Docx-To-PDF-Converter/tree/master/output_files "Converted PDF files")
