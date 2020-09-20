@@ -16,15 +16,22 @@ The program takes the following as input files:
  ## Processing
  The application uses __itextpdf__ and __documents4j__ packages to convert images and docx files to Acrobat PDF format respectively. 
  
- ### Processing images
+ ### Processing image files
  Given an image, the program does the following:
-  * Creates a new document instance
-  * Creates a new file output stream instance
-  * Instantiates a new pdf writer object
-  * Opens the pdf writer
-  * Opens the document
-  * Create a new page where the image will be rendered
-  * 
+  * Creates a new Document instance
+  * Creates a new FileOutputStream instance
+  * Instantiates a new PdfWriter object
+  * Opens the PdfWriter
+  * Opens the Document
+  * Creates a new page where the image will be rendered
+  * Instantiates and gets a new Image object
+  * Sets image's absolute position __(x, y) = (0, 0)__
+  * Sets border width to __0__
+  * Sets image's page size to __A4__
+  * Adds the image to Document
+  * Close Document and PDFWriter
+ 
+ ### Process word files
  
 
 
